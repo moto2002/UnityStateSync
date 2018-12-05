@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class SceneMgr : MonoBehaviour
@@ -13,8 +11,8 @@ public class SceneMgr : MonoBehaviour
         playerPrefab = Resources.Load<GameObject>("PlayerBoy");
 
         GameObject player = Instantiate(
-            playerPrefab, 
-            new Vector3(PlayerData.pos_x, PlayerData.pos_y, PlayerData.pos_z), 
+            playerPrefab,
+            new Vector3(PlayerData.pos_x, PlayerData.pos_y, PlayerData.pos_z),
             Quaternion.identity);
         PlayerData.player = player;
         Destroy(player.GetComponent<PlayerMoveSync>());

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +32,7 @@ public class Login : MonoBehaviour
     }
 
 
-    public void HandleEvent(EventDef id, object data)
+    private void HandleEvent(EventDef id, object data)
     {
         //Debug.Log("AppMgr HandleEvent id: " + id);
 
@@ -49,7 +47,7 @@ public class Login : MonoBehaviour
         }
     }
 
-    public void OnNetHandler(ushort packetId, System.Object obj)
+    private void OnNetHandler(ushort packetId, System.Object obj)
     {
         //Log.Error("AppMgr OnNetHandler packetId:" + packetId);
         if (packetId == Msg.P_ACK_ROLE_LOGIN_OK)

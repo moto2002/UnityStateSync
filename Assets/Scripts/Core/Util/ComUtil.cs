@@ -257,7 +257,7 @@ public class ComUtil
         }
         else if (go.transform.childCount > 0)
         {
-            Transform tran = go.transform.FindChild(localPath);
+            Transform tran = go.transform.Find(localPath);
             if (tran != null)
             {
                 obj = tran.gameObject;
@@ -286,7 +286,7 @@ public class ComUtil
         }
         else if (go.transform.childCount > 0)
         {
-            Transform tran = go.transform.FindChild(localPath);
+            Transform tran = go.transform.Find(localPath);
             if (tran != null)
             {
                 obj = tran.gameObject;

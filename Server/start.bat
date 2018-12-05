@@ -5,7 +5,7 @@
 erl -noshell -s make all -s init stop
 
 
-erl -pa ebin +P 1024000 -smp enable -s server
+erl -pa ebin -s server
 
 
 PAUSE
